@@ -46,6 +46,10 @@ public class MagicAPI {
         throw new MCNotInstalledException();
     }
 
+    public boolean tintItem(ItemStack item, String colorHex){
+        throw new MCNotInstalledException();
+    }
+
     public static int getPlayerAllCosmeticsAvailable(Player player){
         throw new MCNotInstalledException();
     }
