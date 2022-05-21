@@ -18,7 +18,7 @@ public class MagicAPI {
         throw new MCNotInstalledException();
     }
 
-    public static void EquipCosmetic(Player player, String cosmeticId, String color){
+    public static void EquipCosmetic(Player player, String cosmeticId, String color, boolean force){
         throw new MCNotInstalledException();
     }
 
