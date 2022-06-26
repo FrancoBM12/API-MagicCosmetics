@@ -26,10 +26,6 @@ public class CosmeticEquipEvent extends PlayerEvent implements Cancellable {
         throw new MCNotInstalledException();
     }
 
-    /*public Cosmetic getCosmetic() {
-        return throw new MCNotInstalledException();;
-    }*/
-
     public CosmeticType getCosmeticType() {
         throw new MCNotInstalledException();
     }

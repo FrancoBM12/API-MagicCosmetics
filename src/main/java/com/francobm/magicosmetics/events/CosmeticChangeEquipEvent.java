@@ -25,15 +25,6 @@ public class CosmeticChangeEquipEvent extends PlayerEvent implements Cancellable
         throw new MCNotInstalledException();
     }
 
-    /*
-    public Cosmetic getOldCosmetic() {
-        throw new MCNotInstalledException();
-    }
-
-    public Cosmetic getNewCosmetic() {
-        throw new MCNotInstalledException();
-    }*/
-
     @Override
     public boolean isCancelled() {
         throw new MCNotInstalledException();
