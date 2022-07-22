@@ -65,6 +65,7 @@ public class MagicAPI {
      * Unequips a player with the selected type of cosmetic.
      * @param player The player to unequip the cosmetic.
      * @param cosmeticType The type of cosmetic to unequip.
+     * @implNote You can also use {@link com.francobm.magicosmetics.cache.PlayerData#removeEquip(String)} or {@link com.francobm.magicosmetics.cache.PlayerData#removeEquip(CosmeticType)}.
      */
     public static void UnEquipCosmetic(Player player, CosmeticType cosmeticType){
         throw new MCNotInstalledException();
@@ -83,7 +84,9 @@ public class MagicAPI {
     /**
      * @param id The cosmetic id
      * @return the cosmetic item if it exists.
+     * @Deprecated use {@link Cosmetic#getItemStack()} or {@link Cosmetic#getItemColor()} or {@link Cosmetic#getItemColor(Player)} instead.
      */
+    @Deprecated
     public static ItemStack getCosmeticItem(String id){
         throw new MCNotInstalledException();
     }
