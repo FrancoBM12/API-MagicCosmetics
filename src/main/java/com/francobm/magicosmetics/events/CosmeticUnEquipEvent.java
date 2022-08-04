@@ -1,5 +1,6 @@
 package com.francobm.magicosmetics.events;
 
+import com.francobm.magicosmetics.api.Cosmetic;
 import com.francobm.magicosmetics.api.CosmeticType;
 import com.francobm.magicosmetics.utils.MCNotInstalledException;
 import org.bukkit.entity.Player;
@@ -12,12 +13,7 @@ import org.bukkit.event.player.PlayerEvent;
  */
 public class CosmeticUnEquipEvent extends PlayerEvent implements Cancellable {
 
-    public CosmeticUnEquipEvent(Player player, Object cosmetic, CosmeticType cosmeticType) {
-        super(player);
-        throw new MCNotInstalledException();
-    }
-
-    public CosmeticUnEquipEvent(Player player, Object cosmetic) {
+    public CosmeticUnEquipEvent(Player player, Cosmetic cosmetic) {
         super(player);
         throw new MCNotInstalledException();
     }
@@ -31,10 +27,9 @@ public class CosmeticUnEquipEvent extends PlayerEvent implements Cancellable {
         throw new MCNotInstalledException();
     }
 
-    /*
     public Cosmetic getCosmetic() {
         throw new MCNotInstalledException();
-    }*/
+    }
 
     public CosmeticType getCosmeticType() {
         throw new MCNotInstalledException();
