@@ -6,6 +6,10 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 /**
  * MagicAPI is a class that provides a simple way to access MagicCosmetics.
  */
@@ -168,6 +172,32 @@ public class MagicAPI {
      * @return the amount of cosmetics available from the server.
      */
     public static int getServerAllCosmeticsAvailable(){
+        throw new MCNotInstalledException();
+    }
+
+    /**
+     *
+     * @return cosmetics registered on the server in one set
+     */
+    public static Set<Cosmetic> getCosmetics() {
+        throw new MCNotInstalledException();
+    }
+
+    /**
+     *
+     * @param cosmeticType The type of cosmetic you want to return to you
+     * @return a set with cosmetics of the specified type regardless of whether they are hidden in the menu.
+     */
+    public static Set<Cosmetic> getCosmeticsByType(CosmeticType cosmeticType) {
+        throw new MCNotInstalledException();
+    }
+
+    /**
+     *
+     * @param cosmeticType The type of cosmetic you want to return to you
+     * @return a set with the cosmetics of the specified type, unlike {@link MagicAPI#getCosmeticsByType(CosmeticType)} these returns only the cosmetics that are not hidden in the menu.
+     */
+    public static Set<Cosmetic> getCosmeticsHideByType(CosmeticType cosmeticType){
         throw new MCNotInstalledException();
     }
 }
