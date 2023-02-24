@@ -10,6 +10,7 @@ import org.bukkit.inventory.ItemStack;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 
 /**
  * MagicAPI is a class that provides a simple way to access MagicCosmetics.
@@ -98,10 +99,10 @@ public class MagicAPI {
 
     /**
      * Completely removes the entity from the registry and its cosmetics.
-     * @param entity The entity target.
+     * @param entityUniqueId The entity target uniqueId.
      *
      */
-    public static void RemoveEntityCosmetics(Entity entity) {
+    public static void RemoveEntityCosmetics(UUID entityUniqueId) {
         throw new MCNotInstalledException();
     }
 
