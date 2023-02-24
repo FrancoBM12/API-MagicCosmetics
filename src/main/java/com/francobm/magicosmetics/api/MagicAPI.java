@@ -1,6 +1,7 @@
 package com.francobm.magicosmetics.api;
 
 import com.francobm.magicosmetics.utils.MCNotInstalledException;
+import org.bukkit.Color;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -62,6 +63,16 @@ public class MagicAPI {
      * @param colorHex the color of the cosmetic to equip
      */
     public static void EquipCosmetic(Entity entity, String cosmeticId, String colorHex){
+        throw new MCNotInstalledException();
+    }
+
+    /**
+     * Equip a cosmetic with the id and color to an entity
+     * @param entity the entity to equip the cosmetic to
+     * @param cosmeticId the id of the cosmetic to equip
+     * @param color the bukkit color of the cosmetic to equip
+     */
+    public static void EquipCosmetic(Entity entity, String cosmeticId, Color color){
         throw new MCNotInstalledException();
     }
 
