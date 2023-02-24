@@ -97,6 +97,15 @@ public class MagicAPI {
     }
 
     /**
+     * Completely removes the entity from the registry and its cosmetics.
+     * @param entity The entity target.
+     *
+     */
+    public static void RemoveEntityCosmetics(Entity entity) {
+        throw new MCNotInstalledException();
+    }
+
+    /**
      * @param id The cosmetic id
      * @return the cosmetic item if it exists.
      * @Deprecated use {@link Cosmetic#getItemStack()} or {@link Cosmetic#getItemColor()} or {@link Cosmetic#getItemColor(Player)} instead.
