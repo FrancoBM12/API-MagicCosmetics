@@ -12,4 +12,8 @@ public class Hat extends Cosmetic {
     public double getOffSetY() {
         throw new MCNotInstalledException();
     }
+
+    public void setHideCompletely() {
+        throw new MCNotInstalledException();
+    }
 }
