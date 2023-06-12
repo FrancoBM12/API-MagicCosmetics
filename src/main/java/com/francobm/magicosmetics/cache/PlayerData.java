@@ -7,6 +7,7 @@ import org.bukkit.OfflinePlayer;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.UUID;
 
 public class PlayerData {
@@ -163,7 +164,7 @@ public class PlayerData {
     /**
      * @return the player's cosmetics in use.
      */
-    public List<Cosmetic> cosmeticsInUse(){
+    public Set<Cosmetic> cosmeticsInUse(){
         throw new MCNotInstalledException();
     }
 
