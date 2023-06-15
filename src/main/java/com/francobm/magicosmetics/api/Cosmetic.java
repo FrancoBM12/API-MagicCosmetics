@@ -2,6 +2,7 @@ package com.francobm.magicosmetics.api;
 
 import com.francobm.magicosmetics.utils.MCNotInstalledException;
 import org.bukkit.Color;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
@@ -155,6 +156,28 @@ public abstract class Cosmetic {
      * @param hideCosmetic the cosmetic hide in game
      */
     public void setHideCosmetic(boolean hideCosmetic) {
+        throw new MCNotInstalledException();
+    }
+
+    /**
+     * The cosmetic is provided to the selected entity.
+     * @param lendEntity
+     */
+    public void setLendEntity(LivingEntity lendEntity) {
+        throw new MCNotInstalledException();
+    }
+
+    /**
+     * @return to the owner of the cosmetic
+     */
+    public Player getPlayer() {
+        throw new MCNotInstalledException();
+    }
+
+    /**
+     * @return the entity to which the cosmetic has been loaned.
+     */
+    public LivingEntity getLendEntity() {
         throw new MCNotInstalledException();
     }
 }
