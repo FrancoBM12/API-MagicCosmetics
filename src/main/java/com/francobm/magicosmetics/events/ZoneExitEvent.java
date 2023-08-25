@@ -1,5 +1,6 @@
 package com.francobm.magicosmetics.events;
 
+import com.francobm.magicosmetics.cache.Zone;
 import com.francobm.magicosmetics.utils.MCNotInstalledException;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
@@ -11,7 +12,7 @@ import org.bukkit.event.player.PlayerEvent;
  */
 public class ZoneExitEvent extends PlayerEvent implements Cancellable {
 
-    public ZoneExitEvent(Player player, Object zone, Reason reason) {
+    public ZoneExitEvent(Player player, Zone zone, Reason reason) {
         super(player);
         throw new MCNotInstalledException();
     }
@@ -22,6 +23,10 @@ public class ZoneExitEvent extends PlayerEvent implements Cancellable {
     }
 
     public static HandlerList getHandlerList() {
+        throw new MCNotInstalledException();
+    }
+
+    public Zone getZone() {
         throw new MCNotInstalledException();
     }
 
