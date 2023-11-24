@@ -2,6 +2,8 @@ package com.francobm.magicosmetics.cache;
 
 import com.francobm.magicosmetics.api.Cosmetic;
 import com.francobm.magicosmetics.api.CosmeticType;
+import com.francobm.magicosmetics.cache.cosmetics.Hat;
+import com.francobm.magicosmetics.cache.cosmetics.WStick;
 import com.francobm.magicosmetics.utils.MCNotInstalledException;
 import org.bukkit.OfflinePlayer;
 
@@ -24,7 +26,7 @@ public class PlayerData {
     /**
      * @return the cosmetic hat of the player
      */
-    public Cosmetic getHat() {
+    public Hat getHat() {
         throw new MCNotInstalledException();
     }
 
@@ -39,7 +41,7 @@ public class PlayerData {
      *
      * @return the cosmetic off_hand of the player
      */
-    public Cosmetic getWStick() {
+    public WStick getWStick() {
         throw new MCNotInstalledException();
     }
 
