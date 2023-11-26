@@ -3,7 +3,7 @@ package com.francobm.magicosmetics.cache.cosmetics;
 import org.bukkit.inventory.ItemStack;
 
 public interface CosmeticInventory {
-    void changeItem(ItemStack originalItem);
+    ItemStack changeItem(ItemStack originalItem);
     void leftItem();
 
     ItemStack leftItemAndGet();

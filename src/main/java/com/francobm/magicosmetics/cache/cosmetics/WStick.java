@@ -13,9 +13,10 @@ public class WStick extends Cosmetic implements CosmeticInventory {
     /**
      * Combine the item provided with the cosmetic item to combine them into a single item.
      * @param originalItem - Combine this item with the cosmetic to attach it to the player's offhand slot.
+     * @return Returns the item you have stored in the cosmetic or null if you have none.
      */
     @Override
-    public void changeItem(ItemStack originalItem) {
+    public ItemStack changeItem(ItemStack originalItem) {
         throw new MCNotInstalledException();
     }
 
