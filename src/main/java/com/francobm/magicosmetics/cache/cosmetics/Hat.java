@@ -14,10 +14,6 @@ public class Hat extends Cosmetic implements CosmeticInventory {
         throw new MCNotInstalledException();
     }
 
-    public void setHideCompletely() {
-        throw new MCNotInstalledException();
-    }
-
     /**
      * Combine the item provided with the cosmetic item to combine them into a single item.
      * @param originalItem - Combine this item with the cosmetic to attach it to the player's helmet slot.
