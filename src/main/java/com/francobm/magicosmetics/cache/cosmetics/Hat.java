@@ -2,6 +2,7 @@ package com.francobm.magicosmetics.cache.cosmetics;
 
 import com.francobm.magicosmetics.api.Cosmetic;
 import com.francobm.magicosmetics.utils.MCNotInstalledException;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 public class Hat extends Cosmetic implements CosmeticInventory {
@@ -52,6 +53,24 @@ public class Hat extends Cosmetic implements CosmeticInventory {
      */
     @Override
     public ItemStack getCurrentItemSaved() {
+        throw new MCNotInstalledException();
+    }
+
+    /**
+     * It will hide the cosmetic from the selected player.
+     * @param player - target
+     */
+    @Override
+    public void hide(Player player) {
+        throw new MCNotInstalledException();
+    }
+
+    /**
+     * Will show the cosmetic to the selected player.
+     * @param player - target
+     */
+    @Override
+    public void show(Player player) {
         throw new MCNotInstalledException();
     }
 }

@@ -180,4 +180,16 @@ public abstract class Cosmetic {
     public LivingEntity getLendEntity() {
         throw new MCNotInstalledException();
     }
+
+    /**
+     * It will hide the cosmetic from the selected player.
+     * @param player - target
+     */
+    public abstract void hide(Player player);
+
+    /**
+     * Will show the cosmetic to the selected player.
+     * @param player - target
+     */
+    public abstract void show(Player player);
 }
