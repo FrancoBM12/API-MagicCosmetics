@@ -192,4 +192,10 @@ public abstract class Cosmetic {
      * @param player - target
      */
     public abstract void show(Player player);
+
+    /**
+     * It will spawn the cosmetic to the selected player
+     * @param player - target
+     */
+    public abstract void spawn(Player player);
 }

@@ -69,4 +69,8 @@ public class WStick extends Cosmetic implements CosmeticInventory {
     public void show(Player player) {
         throw new MCNotInstalledException();
     }
+
+    public void spawn(Player player) {
+        throw new MCNotInstalledException();
+    }
 }
