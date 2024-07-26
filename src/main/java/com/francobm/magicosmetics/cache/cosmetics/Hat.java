@@ -77,4 +77,9 @@ public class Hat extends Cosmetic implements CosmeticInventory {
     public void spawn(Player player) {
         throw new MCNotInstalledException();
     }
+
+    @Override
+    public void despawn(Player player) {
+        throw new MCNotInstalledException();
+    }
 }

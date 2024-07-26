@@ -191,6 +191,7 @@ public abstract class Cosmetic {
      * Will show the cosmetic to the selected player.
      * @param player - target
      */
+    @Deprecated
     public abstract void show(Player player);
 
     /**
@@ -198,4 +199,10 @@ public abstract class Cosmetic {
      * @param player - target
      */
     public abstract void spawn(Player player);
+
+    /**
+     * It will despawn the cosmetic to the selected player
+     * @param player - target
+     */
+    public abstract void despawn(Player player);
 }
